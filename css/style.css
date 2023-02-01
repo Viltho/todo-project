@@ -114,6 +114,7 @@ input, button {
 }
 
 footer {
+    position: fixed;
     height: 80px;
     bottom: 0;
     width: 100%;
