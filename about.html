@@ -11,60 +11,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="app.js"></script>
 </head>
 
 <body>
     <header>
         <div>
-            <img src="./assets/Logo.png">
-            <h1 class="logoname">ToDo Website</h1>
+            <p>ToDo Website</p>
         </div>
-        <nav>
-            <ul>
-                <li> <a href="./index.html"> Home </a></li>
-                <li> <a href="./about.html"> About </a></li>
-            </ul>
-        </nav>
+        <div><img src="./assets/Logo.png"></div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html"> Home </a></li>
+                    <li><a href="./about.html"> About </a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="details">
-            <div id="photo">
+        <section class="aboutme">
+            <div>
                 <img src="./assets/MyPhoto.jpg" alt="myphoto">
             </div>
-            <div id="about">    
+            <div>
                 <p>Name: Abdullah Abu Hamad</p>
-                <p>Description: Data/IT enthusiast Interests: Web Development, Python, Game Development. Certificates:
-                    DS4A
-                    - Jordan, Google PM</p>
+                <p>Description: Data/IT enthusiast</p>
+                <p>Interests: Web Development, Python, Game Development.</p>
+                <p>Certificates: DS4A - Jordan, Google PM</p>
             </div>
         </section>
-        <section>
-            <div id="form">
-                <form>
-                    <input id="name" type="text" placeholder="Name:">
-                    <input id="email" type="email" placeholder="Email:">
-                    <input id="areamessage" type="text" placeholder="write your message here">
-                    <input id="button" width="10" type="submit" placeholder="Submit">
-                </form>
-            </div>
+        <section class="form">
+            <form>
+                <input id="name" type="text" placeholder="Name:">
+                <input id="email" type="email" placeholder="Email:">
+                <textarea class="messagebox" type="text" placeholder="Your Message" rows="4" cols="50"></textarea>
+                <button>Submit</button>
+            </form>
         </section>
-
     </main>
 
     <footer>
-        <div id="footer-logo">
-            <img src="./assets/Logo.png">
-        </div>
-        <div id="footer-copy">
-            <p> &copy; All right reserved </p>
-        </div>
-        <div id="social-media">
-            <ul>
-                <li><a href="https://linkedin.com/in/a-a-h">LinkedIn</a></li>
-                <li><a href="https://github.com/Viltho">Github</a></li>
-            </ul>
-        </div>
+        <section>
+            <div id="footer-logo">
+                <img src="./assets/Logo.png">
+            </div>
+            <div id="footer-copy">
+                <p> &copy; All rights reserved to me Abdullah AKA Viltho </p>
+            </div>
+            <div id="social-media">
+                <ul>
+                    <li><a href="https://linkedin.com/in/a-a-h">LinkedIn</a></li>
+                    <li><a href="https://github.com/Viltho">Github</a></li>
+                </ul>
+            </div>
+        </section>
     </footer>
 </body>
 
