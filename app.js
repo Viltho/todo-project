@@ -34,7 +34,7 @@ while (agestatus == true) {
 // let confirmstatus = true;
 
 // while (confirmstatus == true) {
-    let popupconfirm = confirm('would you like to see skip welcome message?');
+    let popupconfirm = confirm('would you like to skip welcome message?');
 
     if (popupconfirm === false){
         alert(`Welcome ${yourname}, you are ${yourage} years old.`)
