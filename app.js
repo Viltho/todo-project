@@ -7,11 +7,11 @@ let gender = prompt("Please state your gender: (male / female)");
 if (gender == 'male') {
     yourname = 'Mr. ' + yourname;
 
-}
+};
 else if (gender == 'female') {
     yourname = 'Ms. ' + yourname;
 
-}
+};
 
 
 let agestatus = true;
@@ -25,14 +25,13 @@ while (agestatus == true) {
     else {
         alert('Your age is not compatible.');
     }
-}
+};
 
 let popupconfirm = confirm('would you like to skip welcome message?');
 
 if (popupconfirm === false) {
-    alert(`Welcome ${yourname}, you are ${yourage} years old.`)
-
-}
+    alert(`Welcome ${yourname}, you are ${yourage} years old.`);
+};
 
 // Array todo-js2
 
@@ -116,15 +115,15 @@ while (traceSocial == true) {
 
 function areYouAGamer(){
     arrFunctions.push(gamerQ); 
-}
+};
 
 function areYouACoder(){
     arrFunctions.push(coderQ); 
-}
+};
 
 function areYouSocial(){
     arrFunctions.push(socialQ);
-}
+};
 
 // output
 
