@@ -45,5 +45,3 @@ while (agestatus == true) {
         // confirmstatus = false;
     
 // }
-
-
