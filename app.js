@@ -1,3 +1,4 @@
+'use strict';
 
 // todo-js
 
@@ -38,98 +39,62 @@ if (popupconfirm === false) {
 
 const arrFunctions = [];
 
-let traceGame = true;
-var gamerQ;
-while (traceGame == true) {
-    let gamerStatus = prompt("Are you a gamer? answer with yes or no");
-    if (gamerStatus == 'yes') {
-        // arrFunctions.push(gamerStatus);
-        gamerQ = gamerStatus;
-        traceGame = false;
-    }
-    else if (gamerStatus == 'no'){
-        // arrFunctions.push(gamerStatus);
-        gamerQ = gamerStatus;
-        traceGame = false;
-    }
-    else {
-        alert('Your must state yes or no.');
-    }
-};
-
-let traceCode = true;
-var coderQ;
-while (traceCode == true) {
-    let coderStatus = prompt("Did you code before? answer with yes or no");
-    if (coderStatus == 'yes') {
-        // arrFunctions.push(coderStatus);
-        coderQ = coderStatus;
-        traceCode = false;
-    }
-    else if (coderStatus == 'no'){
-        // arrFunctions.push(coderStatus);
-        coderQ = coderStatus;
-        traceCode = false;
-    }
-    else {
-        alert('Your must state yes or no.');
-    }
-};
-
-let traceSocial = true;
-var socialQ;
-while (traceSocial == true) {
-    let socialStatus = prompt("Do you use Social Media? answer with yes or no");
-    if (socialStatus == 'yes') {
-        // arrFunctions.push(socialStatus);
-        socialQ = socialStatus;
-        traceSocial = false;
-    }
-    else if (socialStatus == 'no'){
-        // arrFunctions.push(socialStatus);
-        socialQ = socialStatus;
-        traceSocial = false;
-    }
-    else {
-        alert('Your must state yes or no.');
-    }
-};
-
-// do {
-//     let socialStatus = prompt("Do you use Social Media? answer with yes or no");
-//     if (socialStatus == 'yes') {
-//         // arrFunctions.push(socialStatus);
-//         socialQ = socialStatus;
-//         traceSocial = false;
-//     }
-//     else if (socialStatus == 'no'){
-//         // arrFunctions.push(socialStatus);
-//         socialQ = socialStatus;
-//         traceSocial = false;
-//     }
-//     else {
-//         alert('Your must state yes or no.');
-//     }
-// } while (traceSocial == true);
-
 // Functions
 
-function areYouAGamer(){
-    arrFunctions.push(gamerQ); 
-}
+function areYouAGamer() {
+    let traceGame = true;
+    var gamerQ;
+    while (traceGame == true) {
+        let gamerStatus = prompt("Are you a gamer? answer with yes or no");
+        if (gamerStatus == 'yes' || gamerStatus == 'no') {
+            gamerQ = gamerStatus;
+            traceGame = false;
+        }
+        
+        else {
+            gamerStatus = 'invalid';
+            gamerQ = gamerStatus;
+            traceGame = false;
+        }
+    };
 
-function areYouACoder(){
-    arrFunctions.push(coderQ); 
-}
+    let traceCode = true;
+    var coderQ;
+    while (traceCode == true) {
+        let coderStatus = prompt("Did you code before? answer with yes or no");
+        if (coderStatus == 'yes' || coderStatus == 'no') {
+            coderQ = coderStatus;
+            traceCode = false;
+        }
 
-function areYouSocial(){
-    arrFunctions.push(socialQ);
+        else {
+            coderStatus = 'invalid';
+            coderQ = coderStatus;
+            traceCode = false;
+        }
+    };
+
+    let traceSocial = true;
+    var socialQ;
+    while (traceSocial == true) {
+        let socialStatus = prompt("Do you use Social Media? answer with yes or no");
+        if (socialStatus == 'yes' || socialStatus == 'no') {
+            socialQ = socialStatus;
+            traceSocial = false;
+        }
+       
+        else {
+            socialStatus = 'invalid';
+            socialQ = socialStatus;
+            traceSocial = false;
+        }
+    };
+    arrFunctions.push(gamerQ, coderQ, socialQ);
 }
 
 // output
 
 areYouAGamer();
-areYouACoder();
-areYouSocial();
+
 
 console.log(arrFunctions);
